@@ -1,0 +1,38 @@
+{
+   "config": {
+        
+        "softap-wifi-ssid": {
+            "help": "Soft AP WiFi SSID",
+            "value": "\"SSID\""
+        },
+        "softap-wifi-password": {
+            "help": "Soft AP WiFi Password",
+            "value": "\"PASSWORD\""
+        },
+        "softap-wifi-security": {
+            "help": "Soft AP WiFi security",
+            "value": "NSAPI_SECURITY_WPA_WPA2"
+        },
+        "softap-wifi-channel": {
+            "help": "Soft AP WiFi Channel",
+            "value": 11
+        },
+        "wlan-mfg-firmware": {
+                "macro_name": "WLAN_MFG_FIRMWARE",
+                "value": "",
+                "help": "Enable this macro for loading WLAN MFG FIRMWARE"
+        }
+    },
+    "target_overrides": {
+       "*": {
+           "platform.stdio-convert-newlines": false,
+           "platform.stdio-convert-tty-newlines": false,
+           "target.network-default-interface-type": "WIFI",
+           "nsapi.default-wifi-ssid": "\"SSID\"",
+           "nsapi.default-wifi-password": "\"PASSWORD\"",
+           "lwip.tcpip-thread-priority": 40,           
+           "platform.stdio-baud-rate": 115200,
+           "target.components_add": ["MBED"]
+       }
+   }
+}
