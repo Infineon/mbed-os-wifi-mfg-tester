@@ -1,15 +1,16 @@
-# Mfgtest application for mbed-os
+# Mfgtest application version 2.0.0
 
 ### What's Included?
 
 Please refer to the [README.md](./README.md)
 
-v3.0.0 : Mfgtest application supports MBED-OS 6.2.0 
-Version 3.0.0 is built from the current Github repo.
+v3.0.1 : Mfgtest application supports MBED-OS 6.2.0
+Version 3.0.1 is built from the current Github repo.
 
 ### Release Versions
 |  Mfgtest App (version) |       MBED-OS  Version   |
 |  :---                  |       :-------------:    |
+|  v3.0.1                |       MBED-OS 6.2.0      |
 |  v3.0.0                |       MBED-OS 6.2.0      |
 |  v2.0.0                |       MBED-OS 6.2.0      |
 |  v1.0.0                |       MBED-OS 5.12.0     |
@@ -27,6 +28,9 @@ This version of the Mfgtest app was validated for compatibility with the followi
 ### Known Issues
 
 ### ChangeLog
+The following Changes are done from v3.0.0 to v3.0.1:
+* Update the wifi-mfg-test.lib to SHA for library version 3.0.1
+
 The following Changes are done from v2.0.0 to v3.0.0:
 * MfgTest App generated from new repo which is publicly available.
 * Added support for CYW43438 and CYW4373 Wlan Chips and supported Cypress targets.
